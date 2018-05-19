@@ -75,4 +75,5 @@ your_user=User("pu","qian qian","women",18)
 your_user.describe_user()
 your_user.greet_user()
 print("测试集体改变")
+print("测试集体改变")
 
