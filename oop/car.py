@@ -6,7 +6,7 @@ class Car():
         self.year=year
 
     def get_describe_name(self):
-        '''返回整洁的描述性信息'''
+        '''返回整洁的描述性信息.'''
         long_name=str(self.year) + ' ' + self.make + ' ' + self.model
         return long_name
 print("---------")
