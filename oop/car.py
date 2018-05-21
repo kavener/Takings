@@ -16,8 +16,4 @@ class Car():
 print("---------")
 my_new_car = Car('audi', 'a4', '2018')
 print(my_new_car.get_describe_name())
-print("改变没有呢")
-print("测试集体改变")
-print("测试集体改变")
-print("测试，传送")
-print("转换不同项目，然后切换到回来，是否托管")
+
