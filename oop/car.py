@@ -17,7 +17,7 @@ class Car():
 
     def get_describe_name(self):
         # 返回整洁的描述性信息.
-        long_name = str(self.year) + ' ' + self.make + ' ' + self.model
+        long_name = str(self.year) + ' ' + self.make.title() + ' ' + self.model
         return long_name
 
     def read_odometer(self):
@@ -56,5 +56,14 @@ my_new_car.read_odometer()
 my_new_car.incremnt_odometer(10)
 my_new_car.read_odometer()
 
-# Try To Try
+# 关于继承
+# 子类继承父类的所有属性和方法，同时还可以定义自己的属性和方法。
+class ElectricCar(Car):
+    # 电动汽车的独特之处
 
+    def __init__(self, make, model, year):
+        # 初始化父类的属性
+        super().__init__(make, model, year)
+
+my_tesla = ElectricCar("tesla", "model s", 2018)
+print(my_tesla.get_describe_name())
